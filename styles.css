@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Tomorrow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Campo de contraseña generada */
+#generated-password {
+    text-align: center;
+    color: rgb(0, 240, 255);
+    background: rgba(0, 240, 255, 0.15);
+    border: 1px solid rgb(0, 240, 255);
+    font-size: 18px;
+    border-radius: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    padding: 0 15px; /* Espaciado lateral para pantallas más pequeñas */
+}
+
+/* Íconos de copiar */
+.copy-btn i {
+    color: rgb(248, 239, 0);
+}
+
+/* Slider */
+.slider-container {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#slider-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Opciones de checkboxes */
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Acomoda los elementos en varias líneas si es necesario */
+    gap: 15px;
+    margin-bottom: 20px; /* Agrega espacio debajo de las opciones */
+}
+
+/* Título de historial de contraseñas */
+#history-title {
+    margin-top: 20px; /* Espacio entre las opciones y el título */
+    font-weight: bold; /* Para destacar el título */
+    text-align: center; /* Centra el título */
+}
+
+/* Historial */
+#history-list {
+    height: 400px;
+    overflow-y: auto;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+#history-list li {
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Acomoda los elementos en varias líneas si es necesario */
+}
+
+#history-list li button {
+    background: none;
+    border: none;
+    color: rgb(219, 219, 219);
+}
+
+/* Botón de borrar historial */
+#clear-history {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Añade un poco de margen interno */
+    }
+
+    .container {
+        max-width: 100%; /* Asegura que el contenedor se ajuste al ancho del dispositivo */
+    }
+
+    #generated-password {
+        font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .slider-container {
+        margin-top: 10px; /* Reduce el margen superior */
+    }
+
+    #history-list {
+        height: 400px; /* Reduce la altura del historial en dispositivos más pequeños */
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+
+    #history-list li {
+        padding: 5px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .options {
+        gap: 10px; /* Reduce el espacio entre opciones */
+    }
+}
