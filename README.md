@@ -19,15 +19,15 @@ Un generador de contraseñas que crea claves únicas y seguras para proteger tus
 
 1. Clona este repositorio en tu máquina local:  
    ```bash
-   git clone https://github.com/tu-usuario/generador-contrasenas.git
+   git clone https://github.com/JuanDP10/PasswordGenerator.git
    ```
 2. Abre el archivo `index.html` en tu navegador.  
 3. Personaliza la configuración según tus necesidades.  
 4. Genera una contraseña segura con un solo clic.  
 
-## 📸 Capturas de pantalla (Opcional)
+## 📸 Capturas de pantalla
 
-Puedes agregar imágenes del proyecto en funcionamiento para mejorar la presentación.  
+![image](https://github.com/user-attachments/assets/3b091b98-3bab-4303-aa97-2bca6041964b)
 
 ## 📄 Licencia  
 
